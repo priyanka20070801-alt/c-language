@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int intinalcash,N;
+    scanf("%d",&intinalcash);
+    scanf("%d",&N);
+    int withdrawal;
+    int riskcount=0;
+    for(int i=0;i<N;i++){
+        scanf("%d",&withdrawal);
+        intinalcash==withdrawal;
+            if(intinalcash>5000){
+                riskcount++;
+            }
+    }
+    printf("remaining cash:%d\n",intinalcash);
+    printf("risk count:%d\n",riskcount);
+    return 0;
+}
