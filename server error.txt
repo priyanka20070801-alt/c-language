@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+   int N;
+   scanf("%d",&N);
+   int error,total=0,critical=0;
+   for(int i=0;i<N;i++){
+       scanf("%d",&error);
+       total+=error;
+       if(error>50){
+           critical++;
+       }
+   }
+   
+    printf("Total error: %d\n",total);
+    printf("critical hours:%d\n",critical);
+
+    return 0;
+}
