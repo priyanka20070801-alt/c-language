@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int N;
+    int decimal=0,remainder,i=0;
+    scanf("%d",&N);
+    while(N>0){
+        remainder=N%10;
+        decimal=decimal+remainder+pow(2,i);
+        N=N/10;
+    }
+    printf("%d",decimal);
+    return 0;
+}
